@@ -44,8 +44,8 @@ defaults:
       path: "_tutorials"
     values:
       layout: tutorial-post
-      editor: 莫烦
-      author: 莫烦
+      editor: UnityTutorial
+      author: UnityTutorial
       author-link: "#"
       enable_ads: true
       published: true  #TOD: change back to true

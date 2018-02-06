@@ -85,13 +85,13 @@ body 中的段落 `<p>` 和所有链接 `<a>`.
 <html lang="cn">
 <head>
 	<meta charset="UTF-8">
-	<title>Scraping tutorial 1 | 莫烦Python</title>
+	<title>Scraping tutorial 1 | UnityTutorial</title>
 	<link rel="icon" href="https://unitytutorial.github.io/static/img/description/tab_icon.png">
 </head>
 <body>
 	<h1>爬虫测试1</h1>
 	<p>
-		这是一个在 <a href="https://unitytutorial.github.io/">莫烦Python</a>
+		这是一个在 <a href="https://unitytutorial.github.io/">UnityTutorial</a>
 		<a href="https://unitytutorial.github.io/tutorials/scraping">爬虫教程</a> 中的简单测试.
 	</p>
 
@@ -114,7 +114,7 @@ print('\n', soup.p)
 
 """
 <p>
-		这是一个在 <a href="https://unitytutorial.github.io/">莫烦Python</a>
+		这是一个在 <a href="https://unitytutorial.github.io/">UnityTutorial</a>
 <a href="https://unitytutorial.github.io/tutorials/scraping">爬虫教程</a> 中的简单测试.
 	</p>
 """
