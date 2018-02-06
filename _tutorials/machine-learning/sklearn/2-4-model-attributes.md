@@ -14,7 +14,7 @@ post-headings:
 
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/sklearnTUT/sk6_model_attribute_method.py){:target="_blank"}
+  * [相关代码](https://github.com/unitytutorial/tutorials/blob/master/sklearnTUT/sk6_model_attribute_method.py){:target="_blank"}
   
   
 上次学了  `Sklearn` 中的 `data sets`，今天来看 Model 的属性和功能。

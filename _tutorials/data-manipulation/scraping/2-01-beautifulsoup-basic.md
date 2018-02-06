@@ -14,7 +14,7 @@ post-headings:
 ---
 
 学习资料:
-  * [本节学习代码](https://github.com/MorvanZhou/easy-scraping-tutorial/blob/master/notebook/2-1-beautifulsoup-basic.ipynb){:target="_blank"}
+  * [本节学习代码](https://github.com/unitytutorial/easy-scraping-tutorial/blob/master/notebook/2-1-beautifulsoup-basic.ipynb){:target="_blank"}
   * BeautifulSoup [英文官网](https://www.crummy.com/software/BeautifulSoup/bs4/doc/){:target="_blank"}, [中文官网](https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/){:target="_blank"}
   * 本节使用的爬虫[测试网页](/static/scraping/basic-structure.html)
 
@@ -73,7 +73,7 @@ from bs4 import BeautifulSoup
 from urllib.request import urlopen
 
 # if has Chinese, apply decode()
-html = urlopen("https://morvanzhou.github.io/static/scraping/basic-structure.html").read().decode('utf-8')
+html = urlopen("https://unitytutorial.github.io/static/scraping/basic-structure.html").read().decode('utf-8')
 print(html)
 ```
 
@@ -86,13 +86,13 @@ body 中的段落 `<p>` 和所有链接 `<a>`.
 <head>
 	<meta charset="UTF-8">
 	<title>Scraping tutorial 1 | 莫烦Python</title>
-	<link rel="icon" href="https://morvanzhou.github.io/static/img/description/tab_icon.png">
+	<link rel="icon" href="https://unitytutorial.github.io/static/img/description/tab_icon.png">
 </head>
 <body>
 	<h1>爬虫测试1</h1>
 	<p>
-		这是一个在 <a href="https://morvanzhou.github.io/">莫烦Python</a>
-		<a href="https://morvanzhou.github.io/tutorials/scraping">爬虫教程</a> 中的简单测试.
+		这是一个在 <a href="https://unitytutorial.github.io/">莫烦Python</a>
+		<a href="https://unitytutorial.github.io/tutorials/scraping">爬虫教程</a> 中的简单测试.
 	</p>
 
 </body>
@@ -114,8 +114,8 @@ print('\n', soup.p)
 
 """
 <p>
-		这是一个在 <a href="https://morvanzhou.github.io/">莫烦Python</a>
-<a href="https://morvanzhou.github.io/tutorials/scraping">爬虫教程</a> 中的简单测试.
+		这是一个在 <a href="https://unitytutorial.github.io/">莫烦Python</a>
+<a href="https://unitytutorial.github.io/tutorials/scraping">爬虫教程</a> 中的简单测试.
 	</p>
 """
 ```
@@ -126,14 +126,14 @@ print('\n', soup.p)
 
 ```python
 """
-<a href="https://morvanzhou.github.io/tutorials/scraping">爬虫教程</a>
+<a href="https://unitytutorial.github.io/tutorials/scraping">爬虫教程</a>
 """
 
 all_href = soup.find_all('a')
 all_href = [l['href'] for l in all_href]
 print('\n', all_href)
 
-# ['https://morvanzhou.github.io/', 'https://morvanzhou.github.io/tutorials/scraping']
+# ['https://unitytutorial.github.io/', 'https://unitytutorial.github.io/tutorials/scraping']
 ```
 
 懂得这些还是远远不够的, 真实情况往往比这些复杂. BeautifulSoup 还有很多其他的选择"增强器". 下次,

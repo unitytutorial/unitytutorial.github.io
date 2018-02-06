@@ -13,7 +13,7 @@ post-headings:
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt11_bar.py){:target="_blank"}
+  * [相关代码](https://github.com/unitytutorial/tutorials/blob/master/matplotlibTUT/plt11_bar.py){:target="_blank"}
   
 
 本节我们介绍一下用`matplotib`来制作一个柱状图，今天的结果如下图：

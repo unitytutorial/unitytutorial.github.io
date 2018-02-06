@@ -18,7 +18,7 @@ post-headings:
 学习资料:
   * [Tensorflow 教程]({% link _tutorials/machine-learning/tensorflow/1-1-A-ANN-and-NN.md %})
   * [Pytorch 神经网络教程]({% link _tutorials/machine-learning/torch/1-1-A-ANN-and-NN.md %})
-  * [本节学习代码](https://github.com/MorvanZhou/train-classifier-from-scratch){:target="_blank"}
+  * [本节学习代码](https://github.com/unitytutorial/train-classifier-from-scratch){:target="_blank"}
   * 用到的[UCI数据](http://archive.ics.uci.edu/ml/datasets/Car+Evaluation){:target="_blank"}
 
 
@@ -139,7 +139,7 @@ post-headings:
 
 了解了我们的数据, 也知道要怎么样处理数据, 我们现在用开始用 python 来处理这些数据吧.
 因为网上的数据是现成的, 我们可以直接[下载](http://archive.ics.uci.edu/ml/machine-learning-databases/car/){:target="_blank"}这个数据,
-或者是通过 Python 代码来实现下载这个功能. 按耐不住, 想一次性看到所有处理数据代码的朋友点[这里](https://github.com/MorvanZhou/train-classifier-from-scratch/blob/master/data_processing.py){:target="_blank"}.
+或者是通过 Python 代码来实现下载这个功能. 按耐不住, 想一次性看到所有处理数据代码的朋友点[这里](https://github.com/unitytutorial/train-classifier-from-scratch/blob/master/data_processing.py){:target="_blank"}.
 
 ```python
 import pandas as pd

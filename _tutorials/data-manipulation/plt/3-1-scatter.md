@@ -12,7 +12,7 @@ post-headings:
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt10_scatter.py){:target="_blank"}
+  * [相关代码](https://github.com/unitytutorial/tutorials/blob/master/matplotlibTUT/plt10_scatter.py){:target="_blank"}
 
 
 本节我们将讲述各种不同的plot的方式。之前我们讲到了如何plot线，今天我们讲述如何plot散点图。

@@ -17,7 +17,7 @@ post-headings:
 
 学习资料:
   * [强化学习系列教程]({% link _tutorials/machine-learning/reinforcement-learning/1-1-A-RL.md %})
-  * [本节学习代码](https://github.com/MorvanZhou/train-robot-arm-from-scratch/tree/master/part4){:target="_blank"}
+  * [本节学习代码](https://github.com/unitytutorial/train-robot-arm-from-scratch/tree/master/part4){:target="_blank"}
 
 在[上节]({% link _tutorials/machine-learning/ML-practice/RL-build-arm-from-scratch3.md %})中,
 我们的环境已经基本建设完成了, 现在我们需要的就是一个强化学习的学习方法. 学习方法有很多, 而且也分很多类型.
@@ -59,7 +59,7 @@ post-headings:
 
 这里不会细说 DDPG 的算法, 因为在我[这个动画教程]({% link _tutorials/machine-learning/reinforcement-learning/6-2-A-DDPG.md %})
 和[这个python教程]({% link _tutorials/machine-learning/reinforcement-learning/6-2-DDPG.md %})中已经详细阐述了一遍. 如果不关心 DDPG 的朋友们,
-其实你最需要了解的就是这个网络是做连续动作的预测就行. 搭建的[全部代码在这里](https://github.com/MorvanZhou/train-robot-arm-from-scratch/blob/master/part4/rl.py){:target="_blank"}.
+其实你最需要了解的就是这个网络是做连续动作的预测就行. 搭建的[全部代码在这里](https://github.com/unitytutorial/train-robot-arm-from-scratch/blob/master/part4/rl.py){:target="_blank"}.
 如果用 tensorboard 显示整个 DDPG 的计算流程图, 就是下面那样.
 
 {% include tut-image.html global-path="/static/results/reinforcement-learning/6-2-2.png" %}
@@ -81,7 +81,7 @@ class DDPG(object):
 ```
 
 使用的时候我们可以对应上在 `main.py` 中的 training 和 test 时段分别进行. 比如 training 完了我们保存网络, 开始 test 的时候提取保存过的网络.
-下面的过程有点省略, 具体的代码请查看[这里](https://github.com/MorvanZhou/train-robot-arm-from-scratch/blob/master/part4/main.py){:target="_blank"}.
+下面的过程有点省略, 具体的代码请查看[这里](https://github.com/unitytutorial/train-robot-arm-from-scratch/blob/master/part4/main.py){:target="_blank"}.
 
 ```python
 # main.py
@@ -117,7 +117,7 @@ else:
 {% include assign-heading.html %}
 
 设置好了这些以后, 就是真正的 training 了.
-在 [main.py](https://github.com/MorvanZhou/train-robot-arm-from-scratch/blob/master/part4/main.py){:target="_blank"} 中将 `ON_TRAIN = True`.
+在 [main.py](https://github.com/unitytutorial/train-robot-arm-from-scratch/blob/master/part4/main.py){:target="_blank"} 中将 `ON_TRAIN = True`.
 
 <video class="tut-content-video" controls loop autoplay muted>
   <source src="/static/results/ML-practice/arm4-2.mp4" type="video/mp4">

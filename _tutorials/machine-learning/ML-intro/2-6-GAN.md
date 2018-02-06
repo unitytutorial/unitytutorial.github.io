@@ -19,7 +19,7 @@ post-headings:
 
 学习资料:
   * [PyTorch GAN 教程]({% link _tutorials/machine-learning/torch/4-06-GAN.md %})
-  * [Tensorflow 50行 GAN 代码](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/406_GAN.py){:target="_blank"}
+  * [Tensorflow 50行 GAN 代码](https://github.com/unitytutorial/Tensorflow-Tutorial/blob/master/tutorial-contents/406_GAN.py){:target="_blank"}
   * [论文 Generative Adversarial Networks](https://arxiv.org/abs/1406.2661){:target="_blank"}
 
 
@@ -90,5 +90,5 @@ Generator 会根据随机数来生成有意义的数据 , Discriminator 会学�
 
 *Python相关教程*
 
-* *Tensorflow [50行 GAN 代码](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/406_GAN.py){:target="_blank"}*
+* *Tensorflow [50行 GAN 代码](https://github.com/unitytutorial/Tensorflow-Tutorial/blob/master/tutorial-contents/406_GAN.py){:target="_blank"}*
 * *PyTorch [GAN 教程]({% link _tutorials/machine-learning/torch/4-06-GAN.md %})*

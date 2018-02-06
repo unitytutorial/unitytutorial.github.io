@@ -17,7 +17,7 @@ post-headings:
 ---
 
 学习资料:
-  * [本节学习代码](https://github.com/MorvanZhou/easy-scraping-tutorial/blob/master/notebook/4-1-distributed-scraping.ipynb){:target="_blank"}
+  * [本节学习代码](https://github.com/unitytutorial/easy-scraping-tutorial/blob/master/notebook/4-1-distributed-scraping.ipynb){:target="_blank"}
   * 英文分布式爬虫[扩展阅读](https://blog.scrapinghub.com/2015/08/05/distributed-frontera-web-crawling-at-large-scale/){:target="_blank"}
   * 中文分布式爬虫[扩展阅读](http://bittiger.blogspot.com.au/2016/02/blog-post_3.html){:target="_blank"}
   * Python 的 [Multiprocessing 教程](/tutorials/python-basic/multiprocessing/)
@@ -61,12 +61,12 @@ post-headings:
 同时开始下载这些 url, 得到这些 url 的 HTML 以后, 同时开始解析 (比如 BeautifulSoup) 网页内容. 在网页中寻找这个网站还没有爬过的链接.
 最终爬完整个 莫烦 Python 网站所有页面.
 
-有了这种思路, 我们就可以开始写代码了. 你可以在[我的 Github](https://github.com/MorvanZhou/easy-scraping-tutorial/blob/master/notebook/4-1-distributed-scraping.ipynb){:target="_blank"}
+有了这种思路, 我们就可以开始写代码了. 你可以在[我的 Github](https://github.com/unitytutorial/easy-scraping-tutorial/blob/master/notebook/4-1-distributed-scraping.ipynb){:target="_blank"}
 一次性观看全部代码.
 
 首先 import 全部要用的模块, 并规定一个主页. **注意, 我用这份代码测试我内网的网站(速度不受外网影响)**
 所以使用的 `base_url` 是 "http://127.0.0.1:4000/", 如果你要爬 莫烦Python, 你的 `base_url`
-要是 "https://morvanzhou.github.io/" (下载速度会受外网影响).
+要是 "https://unitytutorial.github.io/" (下载速度会受外网影响).
 
 ```python
 import multiprocessing as mp
@@ -76,7 +76,7 @@ from bs4 import BeautifulSoup
 import re
 
 # base_url = "http://127.0.0.1:4000/"
-base_url = 'https://morvanzhou.github.io/'
+base_url = 'https://unitytutorial.github.io/'
 ```
 
 我们定义两个功能, 一个是用来爬取网页的(crawl), 一个是解析网页的(parse). 有了前几节内容的铺垫,
@@ -121,7 +121,7 @@ seen = set()
 {% include assign-heading.html %}
 
 为了对比效果, 我们将在下面对比普通的爬虫和这种分布式的效果. 如果是普通爬虫,
-我简化了一下接下来的代码, 将一些不影响的代码去除掉了, 如果你想看全部的代码, 请来到我的 [Github](https://github.com/MorvanZhou/easy-scraping-tutorial/blob/master/notebook/4-1-distributed-scraping.ipynb){:target="_blank"}.
+我简化了一下接下来的代码, 将一些不影响的代码去除掉了, 如果你想看全部的代码, 请来到我的 [Github](https://github.com/unitytutorial/easy-scraping-tutorial/blob/master/notebook/4-1-distributed-scraping.ipynb){:target="_blank"}.
 我们用循环一个个 `crawl` `unseen` 里面的 url, 爬出来的 HTML 放到 `parse` 里面去分析得到结果.
 接着就是更新 `seen` 和 `unseen` 这两个集合了.
 
@@ -157,7 +157,7 @@ while len(unseen) != 0:                 # still get some url to visit
 
 还是上一个 `while` 循环, 首先我们创建一个进程池(Pool). 不太懂进程池的朋友[看过来]({% link _tutorials/python-basic/multiprocessing/5-pool.md %}).
 然后我们修改得到 `htmls` 和 `results` 的两句代码. 其他都不变, 只将这两个功能给并行了.
-我在这里写的都是简化代码, 你可以在[这里](https://github.com/MorvanZhou/easy-scraping-tutorial/blob/master/notebook/4-1-distributed-scraping.ipynb){:target="_blank"}
+我在这里写的都是简化代码, 你可以在[这里](https://github.com/unitytutorial/easy-scraping-tutorial/blob/master/notebook/4-1-distributed-scraping.ipynb){:target="_blank"}
 看到完整代码.
 
 ```python

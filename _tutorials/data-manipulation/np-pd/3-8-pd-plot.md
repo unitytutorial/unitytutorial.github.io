@@ -14,7 +14,7 @@ post-headings:
 
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/numpy%26pandas/18_plot.py){:target="_blank"}
+  * [相关代码](https://github.com/unitytutorial/tutorials/blob/master/numpy%26pandas/18_plot.py){:target="_blank"}
 
 
 这次我们讲如何将数据可视化. 

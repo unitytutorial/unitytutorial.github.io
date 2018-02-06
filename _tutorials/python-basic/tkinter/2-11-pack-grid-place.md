@@ -14,7 +14,7 @@ author: 潘雨 (Mr_Pan)
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk12_position.py){:target="_blank"}
+  * [相关代码](https://github.com/unitytutorial/tutorials/blob/master/tkinterTUT/tk12_position.py){:target="_blank"}
 
 
 {% include assign-heading.html %}
@@ -66,5 +66,5 @@ tk.Label(window, text=1).place(x=20, y=10, anchor='nw')
 {% include tut-image.html image-name="2-11-03.png" %}
 
 
-再补充一下 Tkinter 的[必备步骤](https://github.com/MorvanZhou/tutorials/blob/master/tkinterTUT/tk12_position.py){:target="_blank"},
+再补充一下 Tkinter 的[必备步骤](https://github.com/unitytutorial/tutorials/blob/master/tkinterTUT/tk12_position.py){:target="_blank"},
 整个框架的全部代码就完美了.

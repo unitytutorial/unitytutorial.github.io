@@ -15,7 +15,7 @@ post-headings:
 
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano7_activation_function.py){:target="_blank"}
+  * [相关代码](https://github.com/unitytutorial/tutorials/blob/master/theanoTUT/theano7_activation_function.py){:target="_blank"}
   * Theano 激励函数选择 [链接](http://deeplearning.net/software/theano/library/tensor/nnet/nnet.html#theano.tensor.nnet.nnet.sigmoid){:target="_blank"}
   * 机器学习-简介系列 [激励函数]({% link _tutorials/machine-learning/ML-intro/3-04-activation-function.md %})
 

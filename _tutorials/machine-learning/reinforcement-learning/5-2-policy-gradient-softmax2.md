@@ -18,7 +18,7 @@ post-headings:
 
 
 学习资料:
-  * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/7_Policy_gradient_softmax){:target="_blank"}
+  * [全部代码](https://github.com/unitytutorial/Reinforcement-learning-with-tensorflow/tree/master/contents/7_Policy_gradient_softmax){:target="_blank"}
   * [什么是 Policy Gradient 短视频]({% link _tutorials/machine-learning/ML-intro/4-07-PG.md %})
   * 模拟视频效果[Youtube](https://www.youtube.com/playlist?list=PLXO45tsB95cLYyEsEylpPvTY-8ErPt2O_){:target="_blank"}, [Youku](http://list.youku.com/albumlist/show/id_27485743){:target="_blank"}
   * [强化学习实战]({% link _tutorials/machine-learning/ML-practice/RL-build-arm-from-scratch1.md %})
@@ -303,5 +303,5 @@ class PolicyGradient:
         return discounted_ep_rs
 ```
 
-如果想一次性看到全部代码, 请去我的 [Github](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/7_Policy_gradient_softmax){:target="_blank"}
+如果想一次性看到全部代码, 请去我的 [Github](https://github.com/unitytutorial/Reinforcement-learning-with-tensorflow/tree/master/contents/7_Policy_gradient_softmax){:target="_blank"}
 

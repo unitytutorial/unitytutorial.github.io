@@ -15,7 +15,7 @@ post-headings:
 
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano8_Layer_class.py){:target="_blank"}
+  * [相关代码](https://github.com/unitytutorial/tutorials/blob/master/theanoTUT/theano8_Layer_class.py){:target="_blank"}
   
 在学习了如何利用`Theano`定义神经网络的激活函数后，我们用一个`class`类来规划神经网络层的信息，这样会比较方便的我们之后的编程应用.   
 

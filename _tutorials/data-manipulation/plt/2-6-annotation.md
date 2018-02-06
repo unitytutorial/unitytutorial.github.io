@@ -15,7 +15,7 @@ post-headings:
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/matplotlibTUT/plt8_annotation.py){:target="_blank"}
+  * [相关代码](https://github.com/unitytutorial/tutorials/blob/master/matplotlibTUT/plt8_annotation.py){:target="_blank"}
   
 {% include assign-heading.html %}
 

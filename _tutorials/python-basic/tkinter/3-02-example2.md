@@ -12,7 +12,7 @@ author: 潘雨 (Mr_Pan)
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/tkinterTUT/tk14_login_example){:target="_blank"}
+  * [相关代码](https://github.com/unitytutorial/tutorials/tree/master/tkinterTUT/tk14_login_example){:target="_blank"}
 
 
 
@@ -81,4 +81,4 @@ else:   # 如果发现用户名不存在
 
 
 本节主要是详细介绍登录功能，下节会继续完善注册命令。
-最后在把上一节做好的界面补充就可以了。本节全套代码在莫烦的 [github](https://github.com/MorvanZhou/tutorials/tree/master/tkinterTUT/tk14_login_example){:target="_blank"} 中可以找到.
+最后在把上一节做好的界面补充就可以了。本节全套代码在莫烦的 [github](https://github.com/unitytutorial/tutorials/tree/master/tkinterTUT/tk14_login_example){:target="_blank"} 中可以找到.

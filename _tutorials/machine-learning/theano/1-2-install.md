@@ -13,7 +13,7 @@ post-headings:
 
 
 学习资料:
-  * [英文安装说明](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano2_install.py){:target="_blank"}
+  * [英文安装说明](https://github.com/unitytutorial/tutorials/blob/master/theanoTUT/theano2_install.py){:target="_blank"}
   * Windows 上的安装 [方法](http://deeplearning.net/software/theano/install_windows.html#install-windows){:target="_blank"}
 
 {% include assign-heading.html %}

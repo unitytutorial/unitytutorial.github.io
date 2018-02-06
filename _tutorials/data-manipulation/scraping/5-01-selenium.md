@@ -15,7 +15,7 @@ post-headings:
 ---
 
 学习资料:
-  * [本节学习代码](https://github.com/MorvanZhou/easy-scraping-tutorial/blob/master/notebook/5-1-selenium.ipynb){:target="_blank"}
+  * [本节学习代码](https://github.com/unitytutorial/easy-scraping-tutorial/blob/master/notebook/5-1-selenium.ipynb){:target="_blank"}
   * Selenium Python [官网](http://selenium-python.readthedocs.io/){:target="_blank"}
 
 Selenium 是为了测试而出生的. 但是没想到到了爬虫的年代, 它摇身一变, 变成了爬虫的好工具.
@@ -117,7 +117,7 @@ from selenium import webdriver
 driver = webdriver.Chrome()     # 打开 Chrome 浏览器
 
 # 将刚刚复制的帖在这
-driver.get("https://morvanzhou.github.io/")
+driver.get("https://unitytutorial.github.io/")
 driver.find_element_by_xpath(u"//img[@alt='强化学习 (Reinforcement Learning)']").click()
 driver.find_element_by_link_text("About").click()
 driver.find_element_by_link_text(u"赞助").click()

@@ -19,8 +19,8 @@ post-headings:
 
 
 学习资料:
-  * [本节代码](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/503_visualize_gradient_descent.py){:target="_blank"}
-  * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial){:target="_blank"}
+  * [本节代码](https://github.com/unitytutorial/Tensorflow-Tutorial/blob/master/tutorial-contents/503_visualize_gradient_descent.py){:target="_blank"}
+  * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/unitytutorial/Tensorflow-Tutorial){:target="_blank"}
   * [什么是梯度下降4分钟短视频]({% link _tutorials/machine-learning/ML-intro/2-8-gradient-descent.md %})
 
 {% include assign-heading.html %}
@@ -40,7 +40,7 @@ post-headings:
 
 这次我们还是以代码的形式直观地展示我们要做的事情.
 为了可视化梯度下降的过程, 我们需要用到 Python 中的几个模块, `matplotlib`, `numpy`, `tensorflow`.
-如果对画图感兴趣的朋友们, 可以来看看我的 [python 画图教程](https://morvanzhou.github.io/tutorials/data-manipulation/plt/){:target="_blank"}.
+如果对画图感兴趣的朋友们, 可以来看看我的 [python 画图教程](https://unitytutorial.github.io/tutorials/data-manipulation/plt/){:target="_blank"}.
 
 ```python
 import tensorflow as tf
@@ -100,7 +100,7 @@ with tf.Session() as sess:
 
 接着我们就开始训练, 并时刻记录训练时的 `a,b` 参数 以及 误差 变化.
 
-最后可视化他们, 因为可视化代码不是重点, 所以想仔细看代码的朋友, 欢迎来我的 [Github 中看全套代码](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/503_visualize_gradient_descent.py){:target="_blank"}.
+最后可视化他们, 因为可视化代码不是重点, 所以想仔细看代码的朋友, 欢迎来我的 [Github 中看全套代码](https://github.com/unitytutorial/Tensorflow-Tutorial/blob/master/tutorial-contents/503_visualize_gradient_descent.py){:target="_blank"}.
 
 首先我们先看看训练出来的预测线和数据的拟合度吧:
 

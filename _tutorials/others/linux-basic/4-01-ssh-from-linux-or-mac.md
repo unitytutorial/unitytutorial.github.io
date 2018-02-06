@@ -161,7 +161,7 @@ morvan@morvan-Latitude-E5550:~$
 ```shell
 $ ssh-keygen
 Generating public/private rsa key pair.
-Enter file in which to save the key (/Users/MorvanZhou/.ssh/id_rsa):
+Enter file in which to save the key (/Users/unitytutorial/.ssh/id_rsa):
 ```
 
 确定后, 它会弹出下面这个, 要你来确定你是否想要一个保障密码, 如果你确定你的局域网是安全的, 这个都可以不填.
@@ -180,10 +180,10 @@ Enter same passphrase again:
 最后, 它会显示类似于这样的东西告诉你, 你的锁都已经生成好了.
 
 ```shell
-Your identification has been saved in /Users/MorvanZhou/.ssh/id_rsa.
-Your public key has been saved in /Users/MorvanZhou/.ssh/id_rsa.pub.
+Your identification has been saved in /Users/unitytutorial/.ssh/id_rsa.
+Your public key has been saved in /Users/unitytutorial/.ssh/id_rsa.pub.
 The key fingerprint is:
-SHA256:yVr3PAPmxVO1lBd7KvqBsBCZSE8mdYce8mjBiUfRDVE MorvanZhou@Morvan
+SHA256:yVr3PAPmxVO1lBd7KvqBsBCZSE8mdYce8mjBiUfRDVE unitytutorial@Morvan
 The key's randomart image is:
 +---[RSA 2048]----+
 |    o=*++*E    o+|
@@ -211,7 +211,7 @@ $ ssh-copy-id [被控制的用户名]@[它的ip]
 ```shell
 $ ssh-copy-id morvan@192.168.0.114
 
-/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/MorvanZhou/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/unitytutorial/.ssh/id_rsa.pub"
 /usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
 /usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
 morvan@192.168.0.114's password:

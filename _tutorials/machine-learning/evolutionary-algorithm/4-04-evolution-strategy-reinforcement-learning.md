@@ -19,7 +19,7 @@ post-headings:
 
 
 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/Evolution%20Strategy%20with%20Neural%20Nets.py){:target="_blank"}
+  * [本节的全部代码](https://github.com/unitytutorial/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/Evolution%20Strategy%20with%20Neural%20Nets.py){:target="_blank"}
   * [我制作的 什么是神经进化 动画简介]({% link _tutorials/machine-learning/ML-intro/5-03-neuro-evolution.md %})
   * [什么是遗传算法]({% link _tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})
   * [什么是进化策略]({% link _tutorials/machine-learning/ML-intro/5-02-evolution-strategy.md %})
@@ -112,7 +112,7 @@ for g in range(N_GENERATION):
     train()
 ```
 
-接下来我们将会往这个框架上加很多东西. 如果觉得我太啰嗦了, 你也可以直接跳到[这份完整代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/Evolution%20Strategy%20with%20Neural%20Nets.py){:target="_blank"}
+接下来我们将会往这个框架上加很多东西. 如果觉得我太啰嗦了, 你也可以直接跳到[这份完整代码](https://github.com/unitytutorial/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/Evolution%20Strategy%20with%20Neural%20Nets.py){:target="_blank"}
 研究. 相比这份代码, 我下面说的要简单一点(为了方便理解). 首先, 我们使用 `numpy` 来搭建神经网络.
 其实我发现, 用 `tensorflow` 这种模块来建网络可能比较麻烦, 所以为了更直观, 我就用 `numpy` 好了.
 
@@ -131,7 +131,7 @@ def build_net():
 这里我们搭建了3层网络, 注意我并没有让 `w` 和 `b` 变成矩阵, 因为在 ES 中, 我觉得1维的参数比较好进行加噪点处理.
 之后我们在并行的时候再将参数变成矩阵形式. 所以这个地方, 我也 `return` 了各层的 `shape` 为了之后变矩阵.
 
-我们将使用 `multiprocessing` 这个模块来实现 CPU 的并行, 有兴趣了解 python 并行的朋友, 我有一个非常简单的 `multiprocessing` 的[教程](https://morvanzhou.github.io/tutorials/python-basic/multiprocessing/){:target="_blank"}. 并行的时候传给每个 CPU 的数据越少, 运行越快,
+我们将使用 `multiprocessing` 这个模块来实现 CPU 的并行, 有兴趣了解 python 并行的朋友, 我有一个非常简单的 `multiprocessing` 的[教程](https://unitytutorial.github.io/tutorials/python-basic/multiprocessing/){:target="_blank"}. 并行的时候传给每个 CPU 的数据越少, 运行越快,
 所以与其将像这样的 `np.random.randn(noise.size)` array 噪点数据传入其他 CPU, 还不如在其他 CPU 运算的时候再组装这些噪点就好.
 因为我们只需要给 CPU 传入一个数 `noise seed` 来代替庞大的 `array`, 用 `seed` 来伪随机生成 `array`, 这样能加速你的运算.
 在更新网络的时候再用同样的 `seed` 伪随机构造同样的 `array` 更新就行. 虽然创建了两遍 `array`, 但是这还是比将 `noise array` 传入其他 CPU 快.
@@ -157,7 +157,7 @@ def train(net_shapes, net_params, pool):
 
 上面的这个 `pool` 是我们用了 `multiprocessing.Pool` 生成的多进程池. 在[这个教程]({% link _tutorials/python-basic/multiprocessing/5-pool.md %})中有介绍.
 拿到每个 `kid` 的 `reward` 后, 我们重新按照之前的 `seed` 组装 `noise`, 在进行 `net_params` 的更新.
-但是你看到的这个版本的 `train()`  和我 [github](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/Evolution%20Strategy%20with%20Neural%20Nets.py){:target="_blank"}
+但是你看到的这个版本的 `train()`  和我 [github](https://github.com/unitytutorial/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/Evolution%20Strategy%20with%20Neural%20Nets.py){:target="_blank"}
 中的不太一样, 因为 github 中使用的不是完完全全的 `reward` 来诱导更新.
 而是使用了 `utility` 这个东西. 简单来说, 就是将 `reward` 排序, `reward` 最大的那个, 对应上 `utility` 的第一个,
 反之, `reward` 最小的对应上 `utility` 最后一位. 而我们的 `utility` 长这样:
@@ -186,7 +186,7 @@ def get_reward(shapes, params, env, ep_max_step, seed,):
     return ep_r     # 返回回合奖励
 ```
 
-同样, 上面的 `get_reward()` 也是简单版本的, 我 [github](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/Evolution%20Strategy%20with%20Neural%20Nets.py){:target="_blank"}
+同样, 上面的 `get_reward()` 也是简单版本的, 我 [github](https://github.com/unitytutorial/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/Evolution%20Strategy%20with%20Neural%20Nets.py){:target="_blank"}
 当中, 用了论文中提到的 `mirrored sampling` 这种方法 (论文名: [Mirrored Sampling and Sequential Selection for
 Evolution Strategies](https://hal.inria.fr/inria-00530202/document)). 下面是这个论文中的图.
 
@@ -195,7 +195,7 @@ Evolution Strategies](https://hal.inria.fr/inria-00530202/document)). 下面是�
 简单说, 我们会生成很多噪点, 与其完全随机, 还不如生成一些镜像的噪点. 那这些镜像噪点中,
 大多数情况都是其中一个比另一个好, 所以总会有比较好的那个一个噪点, 我们就利用镜像中比较好的噪点, 加大幅度更新.
 
-上面的就是 ES 的核心功能了, 其他的小功能, 我想, 只要你运行一下[我写的那个文件](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/Evolution%20Strategy%20with%20Neural%20Nets.py){:target="_blank"},
+上面的就是 ES 的核心功能了, 其他的小功能, 我想, 只要你运行一下[我写的那个文件](https://github.com/unitytutorial/Evolutionary-Algorithm/blob/master/tutorial-contents/Using%20Neural%20Nets/Evolution%20Strategy%20with%20Neural%20Nets.py){:target="_blank"},
 自己折腾一下, 就能轻松理解.
 你在这里挑选不同的模拟环境:
 

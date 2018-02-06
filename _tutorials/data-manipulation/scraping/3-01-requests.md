@@ -20,7 +20,7 @@ post-headings:
 ---
 
 学习资料:
-  * [本节学习代码](https://github.com/MorvanZhou/easy-scraping-tutorial/blob/master/notebook/3-1-requests.ipynb){:target="_blank"}
+  * [本节学习代码](https://github.com/unitytutorial/easy-scraping-tutorial/blob/master/notebook/3-1-requests.ipynb){:target="_blank"}
   * Requests 模块[英文官网](http://docs.python-requests.org/en/master/){:target="_blank"}, [中文官网](http://cn.python-requests.org/zh_CN/latest/){:target="_blank"}
 
 

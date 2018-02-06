@@ -19,7 +19,7 @@ post-headings:
 
 
 学习资料:
-  * [本节代码](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/407_transfer_learning.py){:target="_blank"}
+  * [本节代码](https://github.com/unitytutorial/Tensorflow-Tutorial/blob/master/tutorial-contents/407_transfer_learning.py){:target="_blank"}
   * [什么是迁移学习短视频]({% link _tutorials/machine-learning/ML-intro/2-9-transfer-learning.md %})
   * Stanford 迁移学习[阅读](http://cs231n.github.io/transfer-learning/){:target="_blank"}
 
@@ -58,7 +58,7 @@ CNN 通常都是大型模型, 下面我们拿 CNN 来举个例子. 我训练好�
 * 老虎 Tiger: [imagenet_tiger.txt](/static/results/tensorflow/imagenet_tiger.txt)
 * 猫 Kitty cat: [imagenet_kittycat.txt](/static/results/tensorflow/imagenet_kittycat.txt)
 
-我们可以编一个 [Python功能](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/407_transfer_learning.py){:target="_blank"}
+我们可以编一个 [Python功能](https://github.com/unitytutorial/Tensorflow-Tutorial/blob/master/tutorial-contents/407_transfer_learning.py){:target="_blank"}
 逐个下载里面的图片. 这个功能我定义成 `download()`. 下载好后就会被放在 data 这个文件夹中了.
 
 {% include tut-image.html image-name="5_16_03.png" %}
@@ -81,7 +81,7 @@ CNN 通常都是大型模型, 下面我们拿 CNN 来举个例子. 我训练好�
 
 {% include tut-image.html image-name="5_16_04.png" %}
 
-为了做迁移学习, 我对他的 tensorflow VGG16 代码进行了[改写](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/407_transfer_learning.py).
+为了做迁移学习, 我对他的 tensorflow VGG16 代码进行了[改写](https://github.com/unitytutorial/Tensorflow-Tutorial/blob/master/tutorial-contents/407_transfer_learning.py).
 保留了所有 Conv 和 pooling 层, 将后面的所有 fc 层拆了, 改成可以被 train 的两层, 输出一个数字, 这个数字代表了这只猫或老虎的长度.
 
 ```python
@@ -118,7 +118,7 @@ class Vgg16:
 
 因为有了训练好了的 VGG16, 你就能将 VGG16 的 Conv 层想象成是一个 feature extractor, 提取或压缩图片中的特征.
 和 Autoencoder 中的 encoder 类似.
-用这些提取的特征来训练后面的 regressor. 具体代码[在这](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/407_transfer_learning.py){:target="_blank"},
+用这些提取的特征来训练后面的 regressor. 具体代码[在这](https://github.com/unitytutorial/Tensorflow-Tutorial/blob/master/tutorial-contents/407_transfer_learning.py){:target="_blank"},
 下面是简写版.
 
 ```python

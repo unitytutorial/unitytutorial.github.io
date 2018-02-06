@@ -17,7 +17,7 @@ post-headings:
 
 学习资料:
   * [强化学习系列教程]({% link _tutorials/machine-learning/reinforcement-learning/1-1-A-RL.md %})
-  * [本节学习代码](https://github.com/MorvanZhou/train-robot-arm-from-scratch/tree/master/part3){:target="_blank"}
+  * [本节学习代码](https://github.com/unitytutorial/train-robot-arm-from-scratch/tree/master/part3){:target="_blank"}
 
 [上次]({% link _tutorials/machine-learning/ML-practice/RL-build-arm-from-scratch2.md %})我们搭建好了一个静态的环境, 整个环境还没有动起来.
 这次我们结合手臂的运动部分和手臂的成像部分来写全整个手臂的摆动规则. 并且通过不断地可视化来测试是否写错.
@@ -217,7 +217,7 @@ if __name__ == '__main__':
   Your browser does not support HTML5 video.
 </video>
 
-上面这个基础环境的[全部代码在这](https://github.com/MorvanZhou/train-robot-arm-from-scratch/tree/master/part3/env.py){:target="_blank"}.
+上面这个基础环境的[全部代码在这](https://github.com/unitytutorial/train-robot-arm-from-scratch/tree/master/part3/env.py){:target="_blank"}.
 这就是我们一个抛开 RL 的环境, 手臂经测试, 能够用, 而且每个关节都正常. 接着我们就[套上一个 RL 的方法]({% link _tutorials/machine-learning/ML-practice/RL-build-arm-from-scratch4.md %}), 来测试一下整体效果.
 
 *实战:从头开始搭建训练机器人手臂*

@@ -15,7 +15,7 @@ post-headings:
 
 
 学习资料:
-  * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/3_Sarsa_maze){:target="_blank"}
+  * [全部代码](https://github.com/unitytutorial/Reinforcement-learning-with-tensorflow/tree/master/contents/3_Sarsa_maze){:target="_blank"}
   * [什么是 Sarsa 短视频]({% link _tutorials/machine-learning/ML-intro/4-04-sarsa.md %})
   * 模拟视频效果[Youtube](https://www.youtube.com/playlist?list=PLXO45tsB95cLYyEsEylpPvTY-8ErPt2O_){:target="_blank"}, [Youku](http://list.youku.com/albumlist/show/id_27485743){:target="_blank"}
   * 学习书籍 [Reinforcement learning: An introduction](http://ufal.mff.cuni.cz/~straka/courses/npfl114/2016/sutton-bookdraft2016sep.pdf){:target="_blank"}
@@ -106,5 +106,5 @@ class SarsaTable(RL):   # 继承 RL class
         self.q_table.loc[s, a] += self.lr * (q_target - q_predict)  # 更新 q_table
 ```
 
-如果想一次性看到全部代码, 请去我的 [Github](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/3_Sarsa_maze){:target="_blank"}
+如果想一次性看到全部代码, 请去我的 [Github](https://github.com/unitytutorial/Reinforcement-learning-with-tensorflow/tree/master/contents/3_Sarsa_maze){:target="_blank"}
 

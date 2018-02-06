@@ -13,7 +13,7 @@ post-headings:
 
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/theanoTUT/theano10_regression_visualization){:target="_blank"}
+  * [相关代码](https://github.com/unitytutorial/tutorials/tree/master/theanoTUT/theano10_regression_visualization){:target="_blank"}
   
 {% include assign-heading.html %}
 

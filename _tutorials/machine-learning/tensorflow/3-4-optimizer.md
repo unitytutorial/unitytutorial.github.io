@@ -16,7 +16,7 @@ post-headings:
   * 各种 Optimizer 的对比 [链接](http://cs231n.github.io/neural-networks-3/){:target="_blank"}(英文)
   * 机器学习-简介系列 [Optimizer]({% link _tutorials/machine-learning/ML-intro/3-06-speed-up-learning.md %})
   * Tensorflow 的可用 optimizer [链接](https://www.tensorflow.org/versions/r0.9/api_docs/python/train.html){:target="_blank"}
-  * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/MorvanZhou/Tensorflow-Tutorial){:target="_blank"}
+  * 为 TF 2017 打造的[新版可视化教学代码](https://github.com/unitytutorial/Tensorflow-Tutorial){:target="_blank"}
 
 {% include assign-heading.html %}
 

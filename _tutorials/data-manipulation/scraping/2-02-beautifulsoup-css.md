@@ -15,7 +15,7 @@ post-headings:
 ---
 
 学习资料:
-  * [本节学习代码](https://github.com/MorvanZhou/easy-scraping-tutorial/blob/master/notebook/2-2-beautifulsoup-css.ipynb){:target="_blank"}
+  * [本节学习代码](https://github.com/unitytutorial/easy-scraping-tutorial/blob/master/notebook/2-2-beautifulsoup-css.ipynb){:target="_blank"}
   * BeautifulSoup [英文官网](https://www.crummy.com/software/BeautifulSoup/bs4/doc/){:target="_blank"}, [中文官网](https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/){:target="_blank"}
   * 本节使用的爬虫[测试网页](/static/scraping/list.html)
   * CSS 的[详细规则](https://www.w3schools.com/css/){:target="_blank"}
@@ -71,7 +71,7 @@ from bs4 import BeautifulSoup
 from urllib.request import urlopen
 
 # if has Chinese, apply decode()
-html = urlopen("https://morvanzhou.github.io/static/scraping/list.html").read().decode('utf-8')
+html = urlopen("https://unitytutorial.github.io/static/scraping/list.html").read().decode('utf-8')
 print(html)
 ```
 

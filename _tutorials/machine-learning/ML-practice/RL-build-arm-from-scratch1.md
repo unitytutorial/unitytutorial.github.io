@@ -17,7 +17,7 @@ post-headings:
 
 学习资料:
   * [强化学习系列教程]({% link _tutorials/machine-learning/reinforcement-learning/1-1-A-RL.md %})
-  * [本节学习代码](https://github.com/MorvanZhou/train-robot-arm-from-scratch/tree/master/part1){:target="_blank"}
+  * [本节学习代码](https://github.com/unitytutorial/train-robot-arm-from-scratch/tree/master/part1){:target="_blank"}
 
 
 
@@ -34,7 +34,7 @@ post-headings:
 
 {% include assign-heading.html %}
 
-这个实践很简单, 我使用的是我自己一年前编写的[训练代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/experiments/Robot_arm){:target="_blank"},
+这个实践很简单, 我使用的是我自己一年前编写的[训练代码](https://github.com/unitytutorial/Reinforcement-learning-with-tensorflow/tree/master/experiments/Robot_arm){:target="_blank"},
 让机器人手臂学会到达某一个预设点.
 
 <video class="tut-content-video" controls loop autoplay muted>
@@ -64,7 +64,7 @@ post-headings:
 * 主循环脚本 (main.py)
 
 我们在主循环脚本中将会 import 环境和强化学习方法, 所以主循环脚本将上面两者给串联了起来.
-如果你看到这次教学的[代码](https://github.com/MorvanZhou/train-robot-arm-from-scratch/){:target="_blank"},
+如果你看到这次教学的[代码](https://github.com/unitytutorial/train-robot-arm-from-scratch/){:target="_blank"},
 你会发现我将每一步分别打包, part1, part2... 中都有上述三个脚本文件. 我们将在每个 part 中一一添加必要的部分.
 
 这一节, 我们从最基本的 main.py 开始说. 这里涉及了程序的主循环, 也是学习的部分. 整个学习的框架可以被简化成下面这样,

@@ -17,7 +17,7 @@ post-headings:
 ---
 
 学习资料:
-  * [本节学习代码](https://github.com/MorvanZhou/easy-scraping-tutorial/blob/master/notebook/4-2-asyncio.ipynb){:target="_blank"}
+  * [本节学习代码](https://github.com/unitytutorial/easy-scraping-tutorial/blob/master/notebook/4-2-asyncio.ipynb){:target="_blank"}
   * 一个很详细的[英文教学](https://hackernoon.com/asyncio-for-the-working-python-developer-5c468e6e2e8e){:target="_blank"}
   * Python 官网的 [Asyncio 介绍](https://docs.python.org/3/library/asyncio.html){:target="_blank"}
   * 异步加载网页 Python 包 [aiohttp](https://aiohttp.readthedocs.io/en/stable/index.html){:target="_blank"}
@@ -69,7 +69,7 @@ Python 2 和 Python 3.3- 是没有的. 而且 Python 3.5 之后, 和 Python 3.4 
 
 接着我们来举例介绍 asyncio, 像之前画的图那样, 我们要时刻记住, asyncio 不是多进程, 也不是多线程, 单单是一个线程, 但是是在 Python 的功能间切换着执行.
 切换的点用 `await` 来标记, 能够异步的功能用 `async` 标记, 比如 `async def function():`. 首先我们看一下, 不使用 `async` 完成的一份代码, 然后我们将这份代码改成 `async` 版的.
-这些代码我都会放在我的 github 中, 如果想一次性看全部, 请来[这里](https://github.com/MorvanZhou/easy-scraping-tutorial/blob/master/notebook/4-2-asyncio.ipynb){:target="_blank"}.
+这些代码我都会放在我的 github 中, 如果想一次性看全部, 请来[这里](https://github.com/unitytutorial/easy-scraping-tutorial/blob/master/notebook/4-2-asyncio.ipynb){:target="_blank"}.
 
 ```python
 # 不是异步的
@@ -156,7 +156,7 @@ Async total time :  2.001495838165283
 ```python
 import requests
 
-URL = 'https://morvanzhou.github.io/'
+URL = 'https://unitytutorial.github.io/'
 
 
 def normal():
@@ -170,8 +170,8 @@ normal()
 print("Normal total time:", time.time()-t1)
 
 """
-https://morvanzhou.github.io/
-https://morvanzhou.github.io/
+https://unitytutorial.github.io/
+https://unitytutorial.github.io/
 Normal total time: 0.3869960308074951
 """
 ```
@@ -203,7 +203,7 @@ loop.close()
 print("Async total time:", time.time() - t1)
 
 """
-['https://morvanzhou.github.io/', 'https://morvanzhou.github.io/']
+['https://unitytutorial.github.io/', 'https://unitytutorial.github.io/']
 Async total time: 0.11447715759277344
 """
 ```
@@ -230,9 +230,9 @@ Async total time: 0.11447715759277344
 这将可能会使得服务器瘫痪, 你可能再也看不到莫烦 Python 了. 所以为了安全起见, 我限制了爬取数量(restricted_crawl=True).** 因为我测试使用的是内网 "http://127.0.0.1:4000/" 所以不会有这种压力.
 你在以后的爬网页中, 会经常遇到这样的爬取次数的限制 (甚至被封号). 我以前爬 github 时就被限制成一小时只能爬60页.
 
-具体的代码可以在[这里](https://github.com/MorvanZhou/easy-scraping-tutorial/blob/master/notebook/4-2-asyncio.ipynb){:target="_blank"}详细观看, 需要注意的是, 我使用的内网进行测试(外网的下载速度变动太大),
+具体的代码可以在[这里](https://github.com/unitytutorial/easy-scraping-tutorial/blob/master/notebook/4-2-asyncio.ipynb){:target="_blank"}详细观看, 需要注意的是, 我使用的内网进行测试(外网的下载速度变动太大),
 在下载网页的地方, 我使用 `sleep(0.1)` 的功能模拟了网页下载的延迟. 一共下载了我 莫烦 Python 的快400个网页.
-因为代码表达的内容我已经用上图展示给大家了, [每一个代码](https://github.com/MorvanZhou/easy-scraping-tutorial/blob/master/notebook/4-2-asyncio.ipynb){:target="_blank"}都有50-60行, 我就不粘贴在这里了.
+因为代码表达的内容我已经用上图展示给大家了, [每一个代码](https://github.com/unitytutorial/easy-scraping-tutorial/blob/master/notebook/4-2-asyncio.ipynb){:target="_blank"}都有50-60行, 我就不粘贴在这里了.
 具体的结果, 我们可以总结一下.
 
 | Number of Process| Multiprocessing | Asyncio |

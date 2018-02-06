@@ -13,7 +13,7 @@ author: 潘雨 (Mr_Pan)
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/tkinterTUT/tk15_login_example){:target="_blank"}
+  * [相关代码](https://github.com/unitytutorial/tutorials/tree/master/tkinterTUT/tk15_login_example){:target="_blank"}
 
 
 这一次效果图是这样的：

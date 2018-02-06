@@ -17,7 +17,7 @@ post-headings:
 
 学习资料:
   * [强化学习系列教程]({% link _tutorials/machine-learning/reinforcement-learning/1-1-A-RL.md %})
-  * [本节学习代码](https://github.com/MorvanZhou/train-robot-arm-from-scratch/tree/master/part2){:target="_blank"}
+  * [本节学习代码](https://github.com/unitytutorial/train-robot-arm-from-scratch/tree/master/part2){:target="_blank"}
 
 
 [上次]({% link _tutorials/machine-learning/ML-practice/RL-build-arm-from-scratch1.md %})我们已经搭建好了三个主要部分, 包括
@@ -138,7 +138,7 @@ class Viewer(pyglet.window.Window):
 `c3B` 表示的是这个物体的颜色, 每个点都有个颜色, 而每个颜色用3原色来代表, 我们这个物体是纯色的, 所以每个点, 我用相同的颜色, 在 `point` 中 `(86, 109, 249)` 就是蓝色, 然后 `*4` 就是4个顶点都是蓝色.
 
 为了简化这里的代码, 第二条手臂的形式和第一条一样, 第二条手臂的代码我就没写上了,
-在[这里](https://github.com/MorvanZhou/train-robot-arm-from-scratch/blob/master/part2/env.py){:target="_blank"}能看到全部代码.
+在[这里](https://github.com/unitytutorial/train-robot-arm-from-scratch/blob/master/part2/env.py){:target="_blank"}能看到全部代码.
 
 
 

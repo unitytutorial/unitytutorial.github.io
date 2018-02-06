@@ -13,7 +13,7 @@ post-headings:
 
 
 学习资料:
-  * [总结](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano14_summary.py){:target="_blank"}
+  * [总结](https://github.com/unitytutorial/tutorials/blob/master/theanoTUT/theano14_summary.py){:target="_blank"}
   
 {% include assign-heading.html %}
 

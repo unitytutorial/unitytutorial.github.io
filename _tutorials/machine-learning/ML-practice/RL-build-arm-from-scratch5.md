@@ -17,7 +17,7 @@ post-headings:
 
 学习资料:
   * [强化学习系列教程]({% link _tutorials/machine-learning/reinforcement-learning/1-1-A-RL.md %})
-  * [本节学习代码](https://github.com/MorvanZhou/train-robot-arm-from-scratch/tree/master/part5){:target="_blank"}
+  * [本节学习代码](https://github.com/unitytutorial/train-robot-arm-from-scratch/tree/master/part5){:target="_blank"}
 
 [上节]({% link _tutorials/machine-learning/ML-practice/RL-build-arm-from-scratch4.md %})我们加上了强化学习的方法, 来测试了一下整个学习的流程.
 不过也发现了一些问题, 而这种发现问题的方式也肯定会出现在你的强化学习项目中. 这次我们来看看我是怎么解决自己发现的问题的.
@@ -103,7 +103,7 @@ class ArmEnv(object):
         ...
 ```
 
-而且只要 finger 在 goal 里, 我们的 reward `r += 1`. 这些 reward 的变化都能在[这里](https://github.com/MorvanZhou/train-robot-arm-from-scratch/tree/master/part5/env.py){:target="_blank"}看到.
+而且只要 finger 在 goal 里, 我们的 reward `r += 1`. 这些 reward 的变化都能在[这里](https://github.com/unitytutorial/train-robot-arm-from-scratch/tree/master/part5/env.py){:target="_blank"}看到.
 
 
 
@@ -157,7 +157,7 @@ class ArmEnv(object):
 
 {% include tut-image.html image-name="arm5-2.png" %}
 
-这个教程没有对神经网络方面进行讲解. 有时候神经网络也是需要好好测试的. [rl.py](https://github.com/MorvanZhou/train-robot-arm-from-scratch/tree/master/part5/rl.py){:target="_blank"}
+这个教程没有对神经网络方面进行讲解. 有时候神经网络也是需要好好测试的. [rl.py](https://github.com/unitytutorial/train-robot-arm-from-scratch/tree/master/part5/rl.py){:target="_blank"}
 中的几个全局参数, 还有神经网络的层数, 神经元数都是可以好好把玩的.
 
 关于 RL 的神经网络, 我可以给大家提出几个在你硬件允许的情况下通用的方法.
@@ -177,7 +177,7 @@ class ArmEnv(object):
 {% include assign-heading.html %}
 
 上面的简单测试已经可以圆满完成了, 接着我们可以做一些难度更大的, 比如随机初始化 goal 的地点, 让手臂更加 robust.
-我基于上面代码[修改了一下](https://github.com/MorvanZhou/train-robot-arm-from-scratch/tree/master/final){:target="_blank"},
+我基于上面代码[修改了一下](https://github.com/unitytutorial/train-robot-arm-from-scratch/tree/master/final){:target="_blank"},
 添加上了 goal 的初始位置随机化, 加上了可以让你用鼠标控制 goal 的位置. 在神经网络方面, 我增加了神经元数 (100->300) 和记忆库 (10000->30000),
 这样你就能自己用鼠标和手臂互动了, 有没有很开心!
 

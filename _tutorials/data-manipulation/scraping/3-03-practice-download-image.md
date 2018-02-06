@@ -14,7 +14,7 @@ post-headings:
 ---
 
 学习资料:
-  * [本节学习代码](https://github.com/MorvanZhou/easy-scraping-tutorial/blob/master/notebook/3-3-practice-download-images.ipynb){:target="_blank"}
+  * [本节学习代码](https://github.com/unitytutorial/easy-scraping-tutorial/blob/master/notebook/3-3-practice-download-images.ipynb){:target="_blank"}
   * 国家地理杂志[爬取页面](http://www.nationalgeographic.com.cn/animals/){:target="_blank"}
 
 

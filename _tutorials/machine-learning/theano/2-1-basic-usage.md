@@ -12,7 +12,7 @@ post-headings:
 
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/theanoTUT/theano4_basic_usage.py){:target="_blank"}
+  * [相关代码](https://github.com/unitytutorial/tutorials/blob/master/theanoTUT/theano4_basic_usage.py){:target="_blank"}
 
 {% include assign-heading.html %}
 

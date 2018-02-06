@@ -19,8 +19,8 @@ post-headings:
 
 
 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/402_RNN_classifier.py){:target="_blank"}
-  * [Tensorflow 的 50行 RNN 代码](https://github.com/MorvanZhou/Tensorflow-Tutorial/blob/master/tutorial-contents/402_RNN_classification.py){:target="_blank"}
+  * [本节的全部代码](https://github.com/unitytutorial/PyTorch-Tutorial/blob/master/tutorial-contents/402_RNN_classifier.py){:target="_blank"}
+  * [Tensorflow 的 50行 RNN 代码](https://github.com/unitytutorial/Tensorflow-Tutorial/blob/master/tutorial-contents/402_RNN_classification.py){:target="_blank"}
   * [我制作的 循环神经网络 RNN 动画简介]({% link _tutorials/machine-learning/ML-intro/2-3-RNN.md %})
   * [我制作的 循环神经网络 LSTM 动画简介]({% link _tutorials/machine-learning/ML-intro/2-4-LSTM.md %})
   * [PyTorch 官网](http://pytorch.org/){:target="_blank"}
@@ -177,4 +177,4 @@ print(test_y[:10], 'real number')
 """
 ```
 
-所以这也就是在我 [github 代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/402_RNN_classifier.py){:target="_blank"} 中的每一步的意义啦.
+所以这也就是在我 [github 代码](https://github.com/unitytutorial/PyTorch-Tutorial/blob/master/tutorial-contents/402_RNN_classifier.py){:target="_blank"} 中的每一步的意义啦.

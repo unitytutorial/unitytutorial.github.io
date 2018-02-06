@@ -17,7 +17,7 @@ post-headings:
 
 
 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Microbial%20Genetic%20Algorithm.py){:target="_blank"}
+  * [本节的全部代码](https://github.com/unitytutorial/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Microbial%20Genetic%20Algorithm.py){:target="_blank"}
   * [我制作的 什么是遗传算法 动画简介]({% link _tutorials/machine-learning/ML-intro/5-01-genetic-algorithm.md %})
   * 论文 [The Microbial Genetic Algorithm ](https://pdfs.semanticscholar.org/b079/54447f861b074a54752b61af63d960862f92.pdf){:target="_blank"}
 
@@ -103,7 +103,7 @@ class MGA:
 ```
 
 
-如果觉得看整体代码可能方便理解的话, 请去往我的 [github](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Microbial%20Genetic%20Algorithm.py){:target="_blank"} 中查看整套代码.
+如果觉得看整体代码可能方便理解的话, 请去往我的 [github](https://github.com/unitytutorial/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Microbial%20Genetic%20Algorithm.py){:target="_blank"} 中查看整套代码.
 最后套上训练的循环, 就完事啦.
 
 ```python
@@ -113,4 +113,4 @@ for generation in range(N_GENERATIONS):
     ga.evolve(n=5)
 ```
 
-文章里面的代码都是简化版的, 如果要看到完整版和可视化的代码, 请去往我的 [github](https://github.com/MorvanZhou/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Microbial%20Genetic%20Algorithm.py){:target="_blank"}.
+文章里面的代码都是简化版的, 如果要看到完整版和可视化的代码, 请去往我的 [github](https://github.com/unitytutorial/Evolutionary-Algorithm/blob/master/tutorial-contents/Genetic%20Algorithm/Microbial%20Genetic%20Algorithm.py){:target="_blank"}.

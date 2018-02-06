@@ -13,7 +13,7 @@ author: 潘雨 (Mr_Pan)
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/tkinterTUT/tk13_login_example){:target="_blank"}
+  * [相关代码](https://github.com/unitytutorial/tutorials/tree/master/tkinterTUT/tk13_login_example){:target="_blank"}
 
 
 这一次效果图是这样的：
@@ -81,5 +81,5 @@ def usr_sign_up():
 ```
 
 本节我们只是把登录的界面做出来，并没有对触发功能详细的去定义。等下节会继续完善这个例子。
-再补充一下 Tkinter 的[必备步骤](https://github.com/MorvanZhou/tutorials/tree/master/tkinterTUT/tk13_login_example){:target="_blank"},
+再补充一下 Tkinter 的[必备步骤](https://github.com/unitytutorial/tutorials/tree/master/tkinterTUT/tk13_login_example){:target="_blank"},
 整个框架的全部代码就完美了.

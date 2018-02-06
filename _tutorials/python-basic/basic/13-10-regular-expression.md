@@ -23,8 +23,8 @@ description: "正则表达式 (Regular Expression) 又称 RegEx, 是用来匹配
 ---
 
 学习资料:
-* [本节全部代码](https://github.com/MorvanZhou/tutorials/blob/master/basic/36_RegEx.py){:target="_blank"}
-* [代码的 notebook 形式](https://github.com/MorvanZhou/tutorials/blob/master/basic/36_regex.ipynb){:target="_blank"}
+* [本节全部代码](https://github.com/unitytutorial/tutorials/blob/master/basic/36_RegEx.py){:target="_blank"}
+* [代码的 notebook 形式](https://github.com/unitytutorial/tutorials/blob/master/basic/36_regex.ipynb){:target="_blank"}
 * [网页爬虫教程](/tutorials/data-manipulation/scraping/)
 
 正则表达式 (Regular Expression) 又称 RegEx, 是用来匹配字符的一种工具. 在一大串字符中寻找你需要的内容.

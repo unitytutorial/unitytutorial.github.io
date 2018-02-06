@@ -15,7 +15,7 @@ post-headings:
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/tree/master/numpy%26pandas/15_read_to){:target="_blank"}
+  * [相关代码](https://github.com/unitytutorial/tutorials/tree/master/numpy%26pandas/15_read_to){:target="_blank"}
 
 {% include assign-heading.html %}
 
@@ -24,7 +24,7 @@ post-headings:
 
 {% include assign-heading.html %}
 
-示范档案下载 - [student.csv](https://github.com/MorvanZhou/tutorials/blob/master/numpy%26pandas/15_read_to/student.csv){:target="_blank"}
+示范档案下载 - [student.csv](https://github.com/unitytutorial/tutorials/blob/master/numpy%26pandas/15_read_to/student.csv){:target="_blank"}
 
 ```python
 import pandas as pd #加载模块

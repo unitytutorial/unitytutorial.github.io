@@ -17,7 +17,7 @@ post-headings:
 
 
 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/201_torch_numpy.py){:target="_blank"}
+  * [本节的全部代码](https://github.com/unitytutorial/PyTorch-Tutorial/blob/master/tutorial-contents/201_torch_numpy.py){:target="_blank"}
   * [PyTorch 官网](http://pytorch.org/){:target="_blank"}
   * [PyTorch 中的常用数学计算](http://pytorch.org/docs/torch.html#math-operations){:target="_blank"}
 

@@ -15,7 +15,7 @@ post-headings:
 ---
 
 学习资料:
-  * [本节学习代码](https://github.com/MorvanZhou/easy-scraping-tutorial/blob/master/notebook/3-2-download.ipynb){:target="_blank"}
+  * [本节学习代码](https://github.com/unitytutorial/easy-scraping-tutorial/blob/master/notebook/3-2-download.ipynb){:target="_blank"}
 
 从网上下载文件的时候你肯定很开心, 比如说什么电影, pdf, 音乐等. 我们使用爬虫, python 一样也可以做到. 而且做得途径还有很多.
 今天我们就来探讨有哪些可行的途径, 之后我们还能用这些途径来做一个小实战, [下载国家地理杂志上的美图]({% link _tutorials/data-manipulation/scraping/3-03-practice-download-image.md %}).
@@ -40,7 +40,7 @@ post-headings:
 {% include tut-image.html image-name="3-2-1.png" %}
 
 发现原图被存放在这个网页, 注意这个地址开头是 `/`, 并不是完整的网址, 这种形式代表着, 它是在
-"https://morvanzhou.github.io/" 下面的网址. 所以我们还要将其补全, 才能在网址栏中找到这个图片地址.
+"https://unitytutorial.github.io/" 下面的网址. 所以我们还要将其补全, 才能在网址栏中找到这个图片地址.
 
 ```html
 src="/static/img/description/learning_step_flowchart.png"
@@ -49,7 +49,7 @@ src="/static/img/description/learning_step_flowchart.png"
 补全后的[网址](/static/img/description/learning_step_flowchart.png)是:
 
 ```
-https://morvanzhou.github.io/static/img/description/learning_step_flowchart.png
+https://unitytutorial.github.io/static/img/description/learning_step_flowchart.png
 ```
 
 找到了这个网址, 我们就能开始下载了. 为了下载到一个特定的文件夹, 我们先建立一个文件夹吧.
@@ -59,7 +59,7 @@ https://morvanzhou.github.io/static/img/description/learning_step_flowchart.png
 import os
 os.makedirs('./img/', exist_ok=True)
 
-IMAGE_URL = "https://morvanzhou.github.io/static/img/description/learning_step_flowchart.png"
+IMAGE_URL = "https://unitytutorial.github.io/static/img/description/learning_step_flowchart.png"
 ```
 
 

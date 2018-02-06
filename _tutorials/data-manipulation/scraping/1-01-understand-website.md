@@ -16,7 +16,7 @@ post-headings:
 ---
 
 学习资料:
-  * [本节学习代码](https://github.com/MorvanZhou/easy-scraping-tutorial/blob/master/notebook/1-1-urllib.ipynb){:target="_blank"}
+  * [本节学习代码](https://github.com/unitytutorial/easy-scraping-tutorial/blob/master/notebook/1-1-urllib.ipynb){:target="_blank"}
   * 本节使用的爬虫[测试网页](/static/scraping/basic-structure.html)
 
 
@@ -65,7 +65,7 @@ CSS 和 JavaScript 会在后期简单介绍一下. 因为爬网页的时候多�
 <head>
 	<meta charset="UTF-8">
 	<title>Scraping tutorial 1 | 莫烦Python</title>
-	<link rel="icon" href="https://morvanzhou.github.io/static/img/description/tab_icon.png">
+	<link rel="icon" href="https://unitytutorial.github.io/static/img/description/tab_icon.png">
 </head>
 ```
 
@@ -81,8 +81,8 @@ HTML 的第二大块是 `body`, 这个部分才是你看到的网页信息. 网�
 <body>
     <h1>爬虫测试1</h1>
     <p>
-        这是一个在 <a href="https://morvanzhou.github.io/">莫烦Python</a>
-        <a href="https://morvanzhou.github.io/tutorials/scraping">爬虫教程</a> 中的简单测试.
+        这是一个在 <a href="https://unitytutorial.github.io/">莫烦Python</a>
+        <a href="https://unitytutorial.github.io/tutorials/scraping">爬虫教程</a> 中的简单测试.
     </p>
 </body>
 ```
@@ -107,7 +107,7 @@ from urllib.request import urlopen
 
 # if has Chinese, apply decode()
 html = urlopen(
-    "https://morvanzhou.github.io/static/scraping/basic-structure.html"
+    "https://unitytutorial.github.io/static/scraping/basic-structure.html"
 ).read().decode('utf-8')
 print(html)
 ```
@@ -121,13 +121,13 @@ print 出来就是下面这样啦. 这就证明了我们能够成功读取这个
 <head>
 	<meta charset="UTF-8">
 	<title>Scraping tutorial 1 | 莫烦Python</title>
-	<link rel="icon" href="https://morvanzhou.github.io/static/img/description/tab_icon.png">
+	<link rel="icon" href="https://unitytutorial.github.io/static/img/description/tab_icon.png">
 </head>
 <body>
 	<h1>爬虫测试1</h1>
 	<p>
-		这是一个在 <a href="https://morvanzhou.github.io/">莫烦Python</a>
-		<a href="https://morvanzhou.github.io/tutorials/scraping">爬虫教程</a> 中的简单测试.
+		这是一个在 <a href="https://unitytutorial.github.io/">莫烦Python</a>
+		<a href="https://unitytutorial.github.io/tutorials/scraping">爬虫教程</a> 中的简单测试.
 	</p>
 
 </body>
@@ -161,8 +161,8 @@ res = re.findall(r"<p>(.*?)</p>", html, flags=re.DOTALL)    # re.DOTALL if multi
 print("\nPage paragraph is: ", res[0])
 
 # Page paragraph is:
-#  这是一个在 <a href="https://morvanzhou.github.io/">莫烦Python</a>
-#  <a href="https://morvanzhou.github.io/tutorials/scraping">爬虫教程</a> 中的简单测试.
+#  这是一个在 <a href="https://unitytutorial.github.io/">莫烦Python</a>
+#  <a href="https://unitytutorial.github.io/tutorials/scraping">爬虫教程</a> 中的简单测试.
 ```
 
 最后一个练习是找一找所有的链接, 这个比较有用, 有时候你想找到网页里的链接, 然后下载一些内容到电脑里, 就靠这样的途径了.
@@ -171,9 +171,9 @@ print("\nPage paragraph is: ", res[0])
 res = re.findall(r'href="(.*?)"', html)
 print("\nAll links: ", res)
 # All links:
-['https://morvanzhou.github.io/static/img/description/tab_icon.png',
-'https://morvanzhou.github.io/',
-'https://morvanzhou.github.io/tutorials/scraping']
+['https://unitytutorial.github.io/static/img/description/tab_icon.png',
+'https://unitytutorial.github.io/',
+'https://unitytutorial.github.io/tutorials/scraping']
 ```
 
 

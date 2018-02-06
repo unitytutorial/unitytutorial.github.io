@@ -17,7 +17,7 @@ post-headings:
 
 
 学习资料:
-  * [本节的全部代码](https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/202_variable.py){:target="_blank"}
+  * [本节的全部代码](https://github.com/unitytutorial/PyTorch-Tutorial/blob/master/tutorial-contents/202_variable.py){:target="_blank"}
   * [PyTorch 官网](http://pytorch.org/){:target="_blank"}
 
 

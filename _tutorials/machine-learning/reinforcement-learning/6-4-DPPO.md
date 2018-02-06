@@ -24,7 +24,7 @@ post-headings:
 
 
 学习资料:
-  * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/12_Proximal_Policy_Optimization){:target="_blank"}
+  * [全部代码](https://github.com/unitytutorial/Reinforcement-learning-with-tensorflow/tree/master/contents/12_Proximal_Policy_Optimization){:target="_blank"}
   * [什么是 Actor-Critic 短视频]({% link _tutorials/machine-learning/ML-intro/4-08-AC.md %})
   * [我的 A3C Python 教程]({% link _tutorials/machine-learning/reinforcement-learning/6-3-A3C.md %})
   * [我的 Python Threading 多线程教程](/tutorials/python-basic/threading/)
@@ -180,7 +180,7 @@ class PPO:
 {% include tut-image.html image-name="6-4-6.png" %}
 
 这里的 `r(theta)` 是 (New Policy/Old Policy) 的比例, 和前面的公式一样.
-我在代码中把这两种都写上了, 如果觉得我这些代码省略的很严重, 请直接前往我的 [Github 看全套代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/contents/12_Proximal_Policy_Optimization/simply_PPO.py){:target="_blank"}.
+我在代码中把这两种都写上了, 如果觉得我这些代码省略的很严重, 请直接前往我的 [Github 看全套代码](https://github.com/unitytutorial/Reinforcement-learning-with-tensorflow/blob/master/contents/12_Proximal_Policy_Optimization/simply_PPO.py){:target="_blank"}.
 
 ```python
 class PPO:
@@ -205,7 +205,7 @@ class PPO:
             self.atrain_op = tf.train.AdamOptimizer(A_LR).minimize(self.aloss)
 ```
 
-好了, 接下来就是最重要的更新 PPO 时间了, 同样, 如果觉得我这些代码省略的很严重, 请直接前往我的 [Github 看全套代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/contents/12_Proximal_Policy_Optimization/simply_PPO.py){:target="_blank"}.
+好了, 接下来就是最重要的更新 PPO 时间了, 同样, 如果觉得我这些代码省略的很严重, 请直接前往我的 [Github 看全套代码](https://github.com/unitytutorial/Reinforcement-learning-with-tensorflow/blob/master/contents/12_Proximal_Policy_Optimization/simply_PPO.py){:target="_blank"}.
 注意的是, 这个 `update` 的步骤里, 我们用 `for loop` 更新了很多遍 Actor 和 Critic, 在 loop 之前, `pi` 和 `old pi` 是一样的,
 每次 loop 的之后, `pi` 会变动, 而 `old pi` 不变, 这样这个 surrogate ![surrogate](/static/results/reinforcement-learning/6-4-5.png) 就会开始变动了. 这就是 PPO 的精辟.
 
@@ -233,14 +233,14 @@ class PPO:
 
 {% include tut-image.html image-name="6-4-7.png" %}
 
-好了这就是整个 PPO 的主要流程了, 其他的步骤都没那么重要了, 可以直接在我的 [Github 看全套代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/contents/12_Proximal_Policy_Optimization/simply_PPO.py){:target="_blank"}
+好了这就是整个 PPO 的主要流程了, 其他的步骤都没那么重要了, 可以直接在我的 [Github 看全套代码](https://github.com/unitytutorial/Reinforcement-learning-with-tensorflow/blob/master/contents/12_Proximal_Policy_Optimization/simply_PPO.py){:target="_blank"}
 中轻松弄懂. 接下来我们看看怎么样把这个单线程的 PPO 变到多线程去 (Distributed PPO).
 
 {% include assign-heading.html %}
 
 Google DeepMind 提出来了一套和 A3C ([A3C 教程见这里]({% link _tutorials/machine-learning/reinforcement-learning/6-3-A3C.md %})) 类似的并行 PPO 算法.
 看了他们 [paper](https://arxiv.org/abs/1707.02286){:target="_blank"} 中的这个 DPPO 算法后, 我觉得....不好编! 取而代之, 我觉得如果采用 OpenAI 的思路, 用他那个 "简陋" 伪代码, 但是弄成并行计算倒是好弄点.
-所以我就结合了 DeepMind 和 OpenAI, 取他们的精华, 写下了[这份 DPPO 的代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/contents/12_Proximal_Policy_Optimization/DPPO.py){:target="_blank"}.
+所以我就结合了 DeepMind 和 OpenAI, 取他们的精华, 写下了[这份 DPPO 的代码](https://github.com/unitytutorial/Reinforcement-learning-with-tensorflow/blob/master/contents/12_Proximal_Policy_Optimization/DPPO.py){:target="_blank"}.
 
 总结一下我是怎么写的.
 
@@ -253,7 +253,7 @@ Google DeepMind 提出来了一套和 A3C ([A3C 教程见这里]({% link _tutori
 * 更新完后, workers 用最新的 Policy 采集数据
 
 我使用的代码框架和[自己的 A3C]({% link _tutorials/machine-learning/reinforcement-learning/6-3-A3C.md %}) 框架有点像.
-这个 DPPO 具体的代码我不会在这边描述了, 请直接看到[我写的代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/contents/12_Proximal_Policy_Optimization/DPPO.py){:target="_blank"}吧.
+这个 DPPO 具体的代码我不会在这边描述了, 请直接看到[我写的代码](https://github.com/unitytutorial/Reinforcement-learning-with-tensorflow/blob/master/contents/12_Proximal_Policy_Optimization/DPPO.py){:target="_blank"}吧.
 
 不过有些细节我想提前提一下, 方便你们看代码:
 
@@ -261,7 +261,7 @@ Google DeepMind 提出来了一套和 A3C ([A3C 教程见这里]({% link _tutori
 * 使用了 threading 中的 Queue 来存放 worker 收集的数据, 发现用 python 的列表也可以达到一样效果, 计算时间上没太多差别.
 * 更新 PPO 的时候, 我采用的是 DeepMind 的 for loop 形式.
 
-我也用这套 DPPO 测试过自己写的机器手臂的环境, 发现效果也还行. 有兴趣的朋友可以[看到这里](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/experiments/Robot_arm){:target="_blank"}.
+我也用这套 DPPO 测试过自己写的机器手臂的环境, 发现效果也还行. 有兴趣的朋友可以[看到这里](https://github.com/unitytutorial/Reinforcement-learning-with-tensorflow/tree/master/experiments/Robot_arm){:target="_blank"}.
 
 <video class="tut-content-video" controls loop autoplay muted>
   <source src="/static/results/reinforcement-learning/experiment_arm.mp4" type="video/mp4">

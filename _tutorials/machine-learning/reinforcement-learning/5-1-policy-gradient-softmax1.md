@@ -18,7 +18,7 @@ post-headings:
 
 
 学习资料:
-  * [全部代码](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/7_Policy_gradient_softmax){:target="_blank"}
+  * [全部代码](https://github.com/unitytutorial/Reinforcement-learning-with-tensorflow/tree/master/contents/7_Policy_gradient_softmax){:target="_blank"}
   * [什么是 Policy Gradient 短视频]({% link _tutorials/machine-learning/ML-intro/4-07-PG.md %})
   * 模拟视频效果[Youtube](https://www.youtube.com/playlist?list=PLXO45tsB95cLYyEsEylpPvTY-8ErPt2O_){:target="_blank"}, [Youku](http://list.youku.com/albumlist/show/id_27485743){:target="_blank"}
   * [强化学习实战]({% link _tutorials/machine-learning/ML-practice/RL-build-arm-from-scratch1.md %})
@@ -125,5 +125,5 @@ for i_episode in range(3000):
         observation = observation_
 ```
 
-另外一个 'Mountain Car' 模拟代码在我的 [Github 中](https://github.com/MorvanZhou/tutorials/blob/master/Reinforcement_learning_TUT/7_Policy_gradient_softmax/run_MountainCar.py){:target="_blank"},
+另外一个 'Mountain Car' 模拟代码在我的 [Github 中](https://github.com/unitytutorial/tutorials/blob/master/Reinforcement_learning_TUT/7_Policy_gradient_softmax/run_MountainCar.py){:target="_blank"},
 和上面那些代码类似, 只改动了一些大写的参数.

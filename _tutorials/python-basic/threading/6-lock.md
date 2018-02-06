@@ -13,7 +13,7 @@ post-headings:
 ---
 
 学习资料:
-  * [相关代码](https://github.com/MorvanZhou/tutorials/blob/master/threadingTUT/thread6_lock.py){:target="_blank"}
+  * [相关代码](https://github.com/unitytutorial/tutorials/blob/master/threadingTUT/thread6_lock.py){:target="_blank"}
 
 
 **导入线程标准模块**

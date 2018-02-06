@@ -15,7 +15,7 @@ post-headings:
 ---
 
 学习资料:
-  * [本节学习代码](https://github.com/MorvanZhou/easy-scraping-tutorial/blob/master/notebook/2-3-beautifulsoup-regex.ipynb){:target="_blank"}
+  * [本节学习代码](https://github.com/unitytutorial/easy-scraping-tutorial/blob/master/notebook/2-3-beautifulsoup-regex.ipynb){:target="_blank"}
   * 本节使用的爬虫[测试网页](/static/scraping/table.html)
   * 我的完整[正则表达式教程]({% link _tutorials/python-basic/basic/13-10-regular-expression.md %})
 
@@ -56,7 +56,7 @@ from urllib.request import urlopen
 import re
 
 # if has Chinese, apply decode()
-html = urlopen("https://morvanzhou.github.io/static/scraping/table.html").read().decode('utf-8')
+html = urlopen("https://unitytutorial.github.io/static/scraping/table.html").read().decode('utf-8')
 ```
 
 {% include google-in-article-ads.html %}
@@ -65,7 +65,7 @@ html = urlopen("https://morvanzhou.github.io/static/scraping/table.html").read()
 
 ```html
 <td>
-    <img src="https://morvanzhou.github.io/static/img/course_cover/tf.jpg">
+    <img src="https://unitytutorial.github.io/static/img/course_cover/tf.jpg">
 </td>
 ```
 
@@ -81,9 +81,9 @@ for link in img_links:
     print(link['src'])
 
 """
-https://morvanzhou.github.io/static/img/course_cover/tf.jpg
-https://morvanzhou.github.io/static/img/course_cover/rl.jpg
-https://morvanzhou.github.io/static/img/course_cover/scraping.jpg
+https://unitytutorial.github.io/static/img/course_cover/tf.jpg
+https://unitytutorial.github.io/static/img/course_cover/rl.jpg
+https://unitytutorial.github.io/static/img/course_cover/scraping.jpg
 """
 ```
 
@@ -96,11 +96,11 @@ for link in course_links:
     print(link['href'])
 
 """
-https://morvanzhou.github.io/
-https://morvanzhou.github.io/tutorials/scraping
-https://morvanzhou.github.io/tutorials/machine-learning/tensorflow/
-https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/
-https://morvanzhou.github.io/tutorials/data-manipulation/scraping/
+https://unitytutorial.github.io/
+https://unitytutorial.github.io/tutorials/scraping
+https://unitytutorial.github.io/tutorials/machine-learning/tensorflow/
+https://unitytutorial.github.io/tutorials/machine-learning/reinforcement-learning/
+https://unitytutorial.github.io/tutorials/data-manipulation/scraping/
 """
 ```
 

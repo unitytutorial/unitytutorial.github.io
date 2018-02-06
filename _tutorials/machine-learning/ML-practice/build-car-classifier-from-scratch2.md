@@ -18,7 +18,7 @@ post-headings:
 学习资料:
   * [Tensorflow 教程]({% link _tutorials/machine-learning/tensorflow/1-1-A-ANN-and-NN.md %})
   * [Pytorch 神经网络教程]({% link _tutorials/machine-learning/torch/1-1-A-ANN-and-NN.md %})
-  * [本节学习代码](https://github.com/MorvanZhou/train-classifier-from-scratch){:target="_blank"}
+  * [本节学习代码](https://github.com/unitytutorial/train-classifier-from-scratch){:target="_blank"}
   * 用到的[UCI数据](http://archive.ics.uci.edu/ml/datasets/Car+Evaluation){:target="_blank"}
 
 
@@ -124,7 +124,7 @@ for t in range(4000):
 
 {% include assign-heading.html %}
 
-可视化的代码, 我不在这里呈现了, 想看代码的朋友来我的 [github](https://github.com/MorvanZhou/train-classifier-from-scratch/blob/master/model.py){:target="_blank"}.
+可视化的代码, 我不在这里呈现了, 想看代码的朋友来我的 [github](https://github.com/unitytutorial/train-classifier-from-scratch/blob/master/model.py){:target="_blank"}.
 这个可视化展示的是在整个训练过程中, 原本 target 有多少这种类型的数据, 我们发现, 其实每种车状况的数据量还是不同的,
 虽然有点 [imbalance 的问题]({% link _tutorials/machine-learning/ML-intro/3-07-imbalanced-data.md %}),
 但是貌似模型没有被这种 imbalance 问题给带偏. 这是好事. 要不然, 我们还要对这套模型或者数据做手脚, 来解决 imbalance 问题.

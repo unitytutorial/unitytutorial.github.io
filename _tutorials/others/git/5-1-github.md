@@ -38,7 +38,7 @@ github 是一个大家都积极贡献的地方, 你可以和各种人合作创�
 使用这节内容的初始例子文件, 然后将本地的版本库推送到网上:
 
 ```shell
-$ git remote add origin https://github.com/MorvanZhou/git-demo.git
+$ git remote add origin https://github.com/unitytutorial/git-demo.git
 $ git push -u origin master     # 推送本地 master 去 origin
 $ git push -u origin dev        # 推送本地 dev  去 origin
 ```

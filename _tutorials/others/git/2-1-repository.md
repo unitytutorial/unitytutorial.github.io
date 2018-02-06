@@ -44,7 +44,7 @@ $ git config --global user.email "mz@email.com"
 
 ```shell
 $ git init
-# Initialized empty Git repository in /Users/MorvanZhou/Desktop/gitTUT/.git/
+# Initialized empty Git repository in /Users/unitytutorial/Desktop/gitTUT/.git/
 ```
 
 因为这个文件夹中还没有任何的文件, 它返回出来一句话告诉我们已经建立了一个空的 git 管理库.
